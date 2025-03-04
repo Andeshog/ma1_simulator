@@ -7,7 +7,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # Get the directories of the involved packages
-    ma1_stonefish_sim_dir = get_package_share_directory('ma1_stonefish')
+    ma1_stonefish_sim_dir = get_package_share_directory('ma1_sim')
     stonefish_ros2_dir = get_package_share_directory('stonefish_ros2')
 
     # Set default paths for simulation_data and scenario_desc
