@@ -28,10 +28,10 @@
     </atmosphere>
   </environment>
 
-  <include file="$(find ma1_sim)/metadata/materials.scn"/>
-  <include file="$(find ma1_sim)/metadata/looks.scn"/>
+  <include file="$(find ma1_stonefish)/metadata/materials.scn"/>
+  <include file="$(find ma1_stonefish)/metadata/looks.scn"/>
 
-  <include file="$(find ma1_sim)/scenarios/ma1.scn"/>
-  <include file="$(find ma1_sim)/scenarios/river.scn"/>
+  <include file="$(find ma1_stonefish)/scenarios/ma1.scn"/>
+  <include file="$(find ma1_stonefish)/scenarios/river.scn"/>
 
 </scenario>
