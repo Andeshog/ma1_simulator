@@ -29,7 +29,7 @@
             <parent name="Base"/>
             <child name="azimuth_1"/>
             <axis xyz="0.0 0.0 1.0"/>
-            <limits min="-3.14159265359" max="3.14159265359"/>
+            <limits min="1.57" max="3.14"/>
             <origin xyz="1.8 -0.8 0.0" rpy="0.0 0.0 3.14"/>
         </joint>
 
@@ -44,7 +44,7 @@
             <parent name="Base"/>
             <child name="azimuth_2"/>
             <axis xyz="0.0 0.0 1.0"/>
-            <limits min="-3.14159265359" max="3.14159265359"/>
+            <limits min="-3.14" max="-1.57"/>
             <origin xyz="1.8 0.8 0.0" rpy="0.0 0.0 3.14"/>
         </joint>
 
@@ -59,7 +59,7 @@
             <parent name="Base"/>
             <child name="azimuth_3"/>
             <axis xyz="0.0 0.0 1.0"/>
-            <limits min="-3.14159265359" max="3.14159265359"/>
+            <limits min="-1.57" max="0.0"/>
             <origin xyz="-1.8 0.8 0.0" rpy="0.0 0.0 0.0"/>
         </joint>
 
@@ -74,7 +74,7 @@
             <parent name="Base"/>
             <child name="azimuth_4"/>
             <axis xyz="0.0 0.0 1.0"/>
-            <limits min="-3.14159265359" max="3.14159265359"/>
+            <limits min="0.0" max="1.57"/>
             <origin xyz="-1.8 -0.8 0.0" rpy="0.0 0.0 0.0"/>
         </joint>
 
