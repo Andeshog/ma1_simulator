@@ -32,6 +32,6 @@
   <include file="$(find ma1_stonefish)/metadata/looks.scn"/>
 
   <include file="$(find ma1_stonefish)/scenarios/ma1.scn"/>
-  <include file="$(find ma1_stonefish)/scenarios/river.scn"/>
+  <!-- <include file="$(find ma1_stonefish)/scenarios/river.scn"/> -->
 
 </scenario>
