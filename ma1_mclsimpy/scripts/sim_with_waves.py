@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from mclsimpy.simulator import RVG_DP_6DOF, CSAD_DP_6DOF
+from mclsimpy.simulator.gunnerus import RVG_DP_6DOF
 from mclsimpy.waves import WaveLoad, JONSWAP
 import rclpy
 from rclpy.node import Node
