@@ -7,12 +7,12 @@
         <waves height="0.0"/>
         <particles enabled="true"/>
         <current type="uniform">
-            <velocity xyz="0.0 0.0 0.0"/>
+            <velocity xyz="0.2 0.2 0.0"/>
         </current>
         <current type="jet">
             <center xyz="0.0 0.0 0.0"/>
             <outlet radius="1.2"/>
-            <velocity xyz="10.0 10.0 10.0"/>
+            <velocity xyz="0.0 0.0 0.0"/>
         </current>
     </ocean>
     <atmosphere>
