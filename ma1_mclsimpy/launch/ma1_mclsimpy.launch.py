@@ -16,7 +16,7 @@ def generate_launch_description():
     mclsimpy_node = Node(
         package='ma1_mclsimpy',
         executable='sim_with_waves.py',
-        name='ma1_mclsim',
+        name='ma1_mclsimpy_node',
         parameters=[config],
         output='screen'
     )

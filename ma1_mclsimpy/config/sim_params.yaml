@@ -3,6 +3,7 @@
     hs: 0.5 # significant wave height
     tp: 4.0 # peak period
     gamma: 1.3 # peak factor
+    theta: 0.0 # wave direction in radians
     w_min: 0.5 # times the peak frequency
     w_max: 2.0 # times the peak frequency
     N: 100.0 # number of wave components

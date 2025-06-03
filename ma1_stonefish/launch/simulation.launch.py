@@ -6,15 +6,12 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    # Get the directories of the involved packages
     ma1_stonefish_sim_dir = get_package_share_directory('ma1_stonefish')
     stonefish_ros2_dir = get_package_share_directory('stonefish_ros2')
 
-    # Set default paths for simulation_data and scenario_desc
     simulation_data_default = PathJoinSubstitution([ma1_stonefish_sim_dir, 'data'])
     scenario_desc_default = PathJoinSubstitution([ma1_stonefish_sim_dir, 'scenarios'])
 
-    # Declare arguments
     simulation_data_arg = DeclareLaunchArgument(
         'simulation_data',
         default_value=simulation_data_default,

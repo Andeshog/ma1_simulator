@@ -30,7 +30,7 @@ class SimNode(Node):
 
         self.tf_broadcaster = TransformBroadcaster(self)
 
-        self.get_logger().info('Odometry demo node has been started.')
+        self.get_logger().info('mcsimpy simulator has been started.')
 
 
     def init_simulator(self):
