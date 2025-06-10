@@ -1,1 +1,1 @@
-This repository contains different simulation tools for the milliAmpere 1 vessel.
+This repository contains a simulation tool for the milliAmpere 1 vessel.
