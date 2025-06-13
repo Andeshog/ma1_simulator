@@ -29,7 +29,7 @@
             <parent name="Base"/>
             <child name="azimuth_1"/>
             <axis xyz="0.0 0.0 1.0"/>
-            <limits min="1.484" max="3.229"/>
+            <!-- <limits min="1.484" max="3.229"/> -->
             <origin xyz="1.8 -0.8 0.0" rpy="0.0 0.0 3.14"/>
         </joint>
 
@@ -44,7 +44,7 @@
             <parent name="Base"/>
             <child name="azimuth_2"/>
             <axis xyz="0.0 0.0 1.0"/>
-            <limits min="-3.229" max="-1.484"/>
+            <!-- <limits min="-3.229" max="-1.484"/> -->
             <origin xyz="1.8 0.8 0.0" rpy="0.0 0.0 3.14"/>
         </joint>
 
@@ -59,7 +59,7 @@
             <parent name="Base"/>
             <child name="azimuth_3"/>
             <axis xyz="0.0 0.0 1.0"/>
-            <limits min="-1.658" max="0.0873"/>
+            <!-- <limits min="-1.658" max="0.0873"/> -->
             <origin xyz="-1.8 0.8 0.0" rpy="0.0 0.0 0.0"/>
         </joint>
 
@@ -74,7 +74,7 @@
             <parent name="Base"/>
             <child name="azimuth_4"/>
             <axis xyz="0.0 0.0 1.0"/>
-            <limits min="-0.0873" max="1.658"/>
+            <!-- <limits min="-0.0873" max="1.658"/> -->
             <origin xyz="-1.8 -0.8 0.0" rpy="0.0 0.0 0.0"/>
         </joint>
 
@@ -243,6 +243,13 @@
             <history samples="1"/>
             <ros_publisher topic="/ma1/gps"/>
         </sensor>
+
+        <sensor name="camera_front" type="camera" rate="13.0">
+			<link name="Base"/>
+			<origin rpy="1.571 0.0 1.571" xyz="0.40 0.0 -3.02"/>
+			<specs resolution_x="1440" resolution_y="1080" horizontal_fov="90.0"/>
+			<ros_publisher topic="/cam"/>
+		</sensor>
         
         <world_transform xyz="0.0 0.0 0.5" rpy="-1.57 0.0 0.0"/>
 

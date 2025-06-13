@@ -175,20 +175,42 @@ class Ros2Launcher(QWidget):
 
         # mcsimpy tab
         t1 = QWidget(); t1l = QVBoxLayout(t1)
+
+        # Compass as before…
         self.compass_m = CompassWidget()
         t1l.addWidget(self.compass_m, alignment=Qt.AlignmentFlag.AlignHCenter)
-        self.plot_m = pg.PlotWidget(title="mcsimpy XY")
-        self.curve_m = self.plot_m.plot(self.x_m, self.y_m, pen='y')
+
+        # ===== UPDATED PLOT CONFIG =====
+        self.plot_m = pg.PlotWidget(title="mcsimpy XY Position")
+        # white bg
+        self.plot_m.setBackground('w')
+        # show grid
+        self.plot_m.showGrid(x=True, y=True, alpha=0.5)
+        # axis labels
+        self.plot_m.setLabel('bottom', 'East [m]')
+        self.plot_m.setLabel('left',   'North [m]')
+        # the data curve
+        self.curve_m = self.plot_m.plot(self.x_m, self.y_m, pen=pg.mkPen('b', width=2))
         t1l.addWidget(self.plot_m)
+        # =================================
+
         tabs.addTab(t1, "mcsimpy")
 
         # Stonefish tab
         t2 = QWidget(); t2l = QVBoxLayout(t2)
         self.compass_s = CompassWidget()
         t2l.addWidget(self.compass_s, alignment=Qt.AlignmentFlag.AlignHCenter)
-        self.plot_s = pg.PlotWidget(title="Stonefish XY")
-        self.curve_s = self.plot_s.plot(self.x_s, self.y_s, pen='y')
+
+        # ===== SAME UPDATES FOR STONEFISH PLOT =====
+        self.plot_s = pg.PlotWidget(title="Stonefish XY Position")
+        self.plot_s.setBackground('w')
+        self.plot_s.showGrid(x=True, y=True, alpha=0.5)
+        self.plot_s.setLabel('bottom', 'East [m]')
+        self.plot_s.setLabel('left',   'North [m]')
+        self.curve_s = self.plot_s.plot(self.x_s, self.y_s, pen=pg.mkPen('r', width=2))
         t2l.addWidget(self.plot_s)
+        # =============================================
+
         tabs.addTab(t2, "Stonefish")
 
         main_layout.addWidget(tabs, 3)

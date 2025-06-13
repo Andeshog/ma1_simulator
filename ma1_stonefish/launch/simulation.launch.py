@@ -23,7 +23,7 @@ def generate_launch_description():
 
     scenario_desc_arg = DeclareLaunchArgument(
         'scenario_desc',
-        default_value=PathJoinSubstitution([scenario_desc_default, 'demo.scn']),
+        default_value=PathJoinSubstitution([scenario_desc_default, 'colav.scn']),
         description='Path to the scenario file'
     )
 
